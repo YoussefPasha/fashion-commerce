@@ -1,16 +1,14 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import {} from "react-native";
+import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import onboarding from "./src/Authentication/Onboarding";
+import Onboarding from "./src/Authentication/Onboarding";
 
 const AuthenticationStack = createStackNavigator();
 const AuthenticationNavigator = () => {
   return (
     <AuthenticationStack.Navigator>
-      <AuthenticationStack.Screen name="onboarding" component={onboarding} />
+      <AuthenticationStack.Screen name="Onboarding" component={Onboarding} />
     </AuthenticationStack.Navigator>
   );
 };
@@ -18,7 +16,6 @@ const AuthenticationNavigator = () => {
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar style="auto" />
       <AuthenticationNavigator />
     </NavigationContainer>
   );
