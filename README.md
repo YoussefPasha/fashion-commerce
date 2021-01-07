@@ -1,6 +1,6 @@
 # Fashion commerce
 
-## tools
+## Packages & modules
 
 - [React Native](https://reactnative.dev/)
 - [typescript](https://www.typescriptlang.org/)
